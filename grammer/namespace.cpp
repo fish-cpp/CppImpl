@@ -13,7 +13,17 @@ namespace Math{
     }
 }
 
+/**
+ * 命名空间可以不写在一个地方的
+ */
+namespace Math{
+    int minus(int a, int b) {
+        return a - b;
+    }
+}
+
 int main() {
     cout << "Math::add(1, 3): " << Math::add(1, 3) << endl;
+    cout << "Math::add(1, 3): " << Math::minus(1, 3) << endl;
     return 0;
 }
